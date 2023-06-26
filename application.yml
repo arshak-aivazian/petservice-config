@@ -1,0 +1,17 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: ${KEYCLOAK_SERVER_URL:http://localhost:8484/auth}/realms/my_realm/protocol/openid-connect/certs
+  kafka:
+    bootstrap-servers: kafka0:29090
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761}/eureka
+
+app:
+  keycloak:
+    enabled: true
