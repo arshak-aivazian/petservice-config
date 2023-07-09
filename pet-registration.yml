@@ -1,3 +1,7 @@
+app:
+  image:
+    bucket: c:/tmp/pet_images
+
 spring:
   liquibase:
     enabled: true
